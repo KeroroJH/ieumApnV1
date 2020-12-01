@@ -7,7 +7,6 @@
 	<name>ieumApnV1</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>5.2.11.RELEASE</org.springframework-version>
@@ -255,6 +254,17 @@
 		    <encoding>UTF-8</encoding>
 		</configuration>
 	    </plugin>
+	    
+	    <!-- webxml 파일 제거 -->
+		<plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-war-plugin</artifactId>
+	        <version>3.2.0</version>
+	        <configuration>
+	            <failOnMissingWebXml>false</failOnMissingWebXml>
+	        </configuration>
+	    </plugin>	    
+	    
         </plugins>
     </build>
 </project>
