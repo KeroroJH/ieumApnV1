@@ -20,13 +20,13 @@ import kr.co.jener.config.ServletConfig;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 @ContextConfiguration(classes = {RootConfig.class,ServletConfig.class})
-public class BoardControllerTest {
+public class ControllerTest {
 	
 @Autowired
 WebApplicationContext wac;
 MockMvc mockMvc;
 
-private static Logger logger = LoggerFactory.getLogger(BoardControllerTest.class);
+private static Logger logger = LoggerFactory.getLogger(ControllerTest.class);
 
 	@Before
 	public void setUp() throws Exception {

@@ -1,6 +1,4 @@
-package test.mvc;
-
-import static org.junit.Assert.fail;
+package test.dbconn;
 
 import javax.inject.Inject;
 
@@ -11,8 +9,10 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import kr.co.jener.config.RootConfig;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:config/spring/root-context.xml"})
+@ContextConfiguration(classes = {RootConfig.class})
 public class MybatisTest {
 	
 	@Inject
